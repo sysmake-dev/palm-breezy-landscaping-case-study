@@ -24,7 +24,7 @@
 
 #service-hero {
   text-align: center;
-  height: 30vh;
+  min-height: 30vh;
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -49,7 +49,6 @@
 #service-hero-lawn {
   text-align: center;
   height: 30vh;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/site/service1-lawn-maintenance.jpg");
@@ -66,7 +65,6 @@
 #service-hero-landscape {
   text-align: center;
   height: 30vh;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/site/service2-landscape-maintenance.jpg");
@@ -83,7 +81,6 @@
 #service-hero-palm {
   text-align: center;
   height: 30vh;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/site/service3-palm-trees.jpg");
@@ -100,7 +97,6 @@
 #service-hero-property {
   text-align: center;
   height: 30vh;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/site/service4-property-cleanup.jpg");
@@ -117,7 +113,6 @@
 #service-hero-install {
   text-align: center;
   height: 30vh;
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/site/service5-installation.jpg");
