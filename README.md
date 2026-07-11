@@ -81,4 +81,4 @@ The site provides a clear and professional online presence that supports custome
 
 ## STATUS
 
-Implementing site design.
+Completed.
