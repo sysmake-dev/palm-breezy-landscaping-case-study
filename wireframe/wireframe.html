@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palm Breezy Landscaping - Wireframe</title>
+    <link rel="stylesheet" href="wireframe.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav__container">
+        <div class="logo">
+          <a href="index.html">Palm Breezy Landscaping</a>
+        </div>
+
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button class="nav__cta">Request a Quote</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="container">
+          <h1>Professional Landscaping · SWFL</h1>
+          <p>
+            Serving Southwest Florida with reliable lawn care, landscape
+            maintenance, and installation services.
+          </p>
+
+          <div class="hero__buttons">
+            <button>Request a Quote</button>
+            <button>View Services</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <p>
+            Palm Breezy Landscaping offers reliable residential landscaping
+            services designed to keep your property clean, healthy, and visually
+            appealing throughout the year.
+          </p>
+          <div class="services__grid">
+            <div class="service__card">
+              <img
+                src="assets/example-image.svg"
+                alt="Service 1 - Routine Lawn Maintenance"
+              />
+              <h3>Routine Lawn Maintenance</h3>
+              <p>Weekly and bi-weekly lawn care services.</p>
+            </div>
+
+            <div class="service__card">
+              <img
+                src="assets/example-image.svg"
+                alt="Service 2 - Landscape Maintenance"
+              />
+              <h3>Landscape Maintenance</h3>
+              <p>Care for hedges, shrubs, and landscape beds.</p>
+            </div>
+
+            <div class="service__card">
+              <img
+                src="assets/example-image.svg"
+                alt="Service 3 - Palm Tree Services"
+              />
+              <h3>Palm Tree Services</h3>
+              <p>Trimming and care for palm trees and tropical plants.</p>
+            </div>
+
+            <div class="service__card">
+              <img
+                src="assets/example-image.svg"
+                alt="Service 4 - Property Cleanup"
+              />
+              <h3>Property Cleanup</h3>
+              <p>Storm cleanup and seasonal yard restoration.</p>
+            </div>
+
+            <div class="service__card">
+              <img
+                src="assets/example-image.svg"
+                alt="Service 5 - Installation Services"
+              />
+              <h3>Installation Services</h3>
+              <p>Sod installation and new landscape beds.</p>
+            </div>
+          </div>
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section id="why">
+        <div class="container">
+          <h2>Why Choose Palm Breezy</h2>
+
+          <div class="trust__grid">
+            <div class="trust__item">
+              <h3>Reliable Scheduling</h3>
+              <p>Consistent service you can depend on.</p>
+            </div>
+
+            <div class="trust__item">
+              <h3>Experienced Local Team</h3>
+              <p>Knowledge of Florida lawns and plants.</p>
+            </div>
+
+            <div class="trust__item">
+              <h3>Quality Equipment</h3>
+              <p>Professional tools for clean results.</p>
+            </div>
+
+            <div class="trust__item">
+              <h3>Attention to Detail</h3>
+              <p>Every property receives careful work.</p>
+            </div>
+          </div>
+
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <!-- Featured Work Section -->
+      <section id="featured-work">
+        <div class="container">
+          <h2>Featured Work</h2>
+          <p>
+            Take a look at some of our recent landscaping work across Southwest
+            Florida. From routine lawn maintenance to full landscape
+            improvements, we take pride in delivering clean and professional
+            results.
+          </p>
+          <div class="gallery__preview">
+            <div class="gallery__item"></div>
+            <div class="gallery__item"></div>
+            <div class="gallery__item"></div>
+          </div>
+
+          <button>View Full Gallery</button>
+        </div>
+      </section>
+
+      <!-- Service Area -->
+      <section id="service-area">
+        <div class="container">
+          <h2>Service Area</h2>
+
+          <ul class="service__locations">
+            <li>Fort Myers</li>
+            <li>Cape Coral</li>
+            <li>Estero</li>
+            <li>Bonita Springs</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="cta">
+        <div class="container">
+          <h2>Ready to improve your yard in a <span>breeze</span>?</h2>
+          <p>
+            Whether you need regular lawn care, landscape maintenance, or a full
+            yard cleanup, Palm Breezy Landscaping is here to make that an ease.
+          </p>
+
+          <button>Request a Free Quote</button>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            You can request a service or ask a question by filling out the
+            contact form below. A member of our team will review your request
+            and respond as soon as possible.
+          </p>
+          <form class="contact__form">
+            <input type="text" placeholder="Name" />
+
+            <input type="email" placeholder="Email" />
+
+            <input type="tel" placeholder="Phone" />
+
+            <select>
+              <option>Service Needed</option>
+            </select>
+
+            <select>
+              <option>Location</option>
+            </select>
+
+            <textarea placeholder="Message"></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Palm Breezy Landscaping</p>
+        <p>Proudly Serving SWFL</p>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Gallery</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <p>&copy; 2026 Palm Breezy Landscaping. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
