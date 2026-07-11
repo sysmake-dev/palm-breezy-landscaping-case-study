@@ -54,7 +54,7 @@ Many homeowners search for local landscaping services from their phones while aw
 
 ## Service-Focused Information Architecture
 
-**Decision:** Organize the website around the company's services rather than lengthy marketing content.
+**Decision:** Organize the website around the company's services instead of lengthy marketing content.
 
 **Reasoning:**
 
@@ -93,7 +93,7 @@ Clearly identifying the primary service areas:
 
 Landscaping services require customers to trust a company with the appearance and maintenance of their property.
 
-Rather than relying solely on marketing language, the website emphasizes practical qualities that influence hiring decisions, including:
+Instead of relying solely on marketing language, the website emphasizes practical qualities that influence hiring decisions, including:
 
 - reliable scheduling
 - experienced local knowledge
@@ -106,7 +106,7 @@ Rather than relying solely on marketing language, the website emphasizes practic
 
 **Reasoning:**
 
-Landscaping is a highly visual service. Showing completed work allows visitors to evaluate quality through real project examples rather than descriptions alone.
+Landscaping is a highly visual service. Showing completed work allows visitors to evaluate quality through real project examples instead of descriptions alone.
 
 The gallery also demonstrates the variety of services offered, including lawn maintenance, palm tree care, mulch installation, and landscape improvements.
 
@@ -128,7 +128,7 @@ Making the service selection and location optional allows the same form to suppo
 
 **Reasoning:**
 
-Visitors often scan service websites rather than reading every paragraph.
+Visitors often scan service websites instead of reading every paragraph.
 
 A strong visual hierarchy allows users to quickly identify relevant information, improving usability while reducing cognitive load.
 
@@ -144,7 +144,7 @@ It also improves readability by reducing the contrast fatigue associated with la
 
 ## Performance-First Implementation
 
-**Decision:** Use a warm neutral background (#F4EFE6) behind the primary content sections.Build the website using semantic HTML, CSS, and lightweight JavaScript without external frameworks.
+**Decision:** Build the website using semantic HTML, CSS, and lightweight JavaScript without external frameworks.
 
 **Reasoning:**
 
