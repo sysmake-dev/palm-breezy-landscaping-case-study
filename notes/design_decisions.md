@@ -4,7 +4,7 @@
 
 ## About
 
-This document records the design decisions made throughout the development of the Palmetto Coast High Leadership Academy website, along with the reasoning behind each choice. Its purpose is to document the rationale behind implementation decisions and provide a reference for future maintenance, redesigns, or feature additions.
+This document records the design decisions made throughout the development of the Palm Breezy Landscaping website, along with the reasoning behind each choice. Its purpose is to document the rationale behind implementation decisions and provide a reference for future maintenance, redesigns, or feature additions.
 
 ---
 
@@ -12,96 +12,148 @@ This document records the design decisions made throughout the development of th
 
 ## Primary Color
 
-**Decision:** Use Deep Navy (`#1F3A5F`) as the primary brand color.
+**Decision:** Use Landscape Green (#5C9A2A) as the primary brand color.
 
 **Reasoning:**
 
-Deep navy communicates leadership, professionalism, discipline, and trust. Because the website represents a high school's Leadership Academy and JROTC program, the primary color should reinforce structure, responsibility, and credibility while remaining approachable to students, parents, instructors, and community members.
+Green naturally communicates healthy lawns, plant life, growth, and outdoor services. Because Palm Breezy Landscaping specializes in residential lawn care and landscaping, the primary color immediately reinforces the company's industry while presenting a clean and approachable visual identity.
 
 ---
 
 ## Secondary Color
 
-**Decision:** Use Muted Gold (`#D4AF37`) as the secondary color.
+**Decision:** Use Deep Forest Green (#3F6330) as the secondary color.
 
 **Reasoning:**
 
-Gold symbolizes achievement, honor, excellence, and recognition. It evokes military insignia, awards, and academic accomplishment, reinforcing the leadership-focused nature of the program. To preserve its visual impact, gold is used sparingly as a secondary accent rather than a dominant color.
+The darker green complements the primary brand color while introducing greater visual contrast throughout the interface. It reinforces professionalism and stability without moving away from the natural color palette expected of a landscaping business.
 
 ---
 
 ## Accent Color
 
-**Decision:** Use Palmetto Green (`#2F6F5F`) as the accent color.
+**Decision:** Use Coral Orange (#FF7F50) as the accent color.
 
 **Reasoning:**
 
-The green accent reflects Florida's natural environment while directly referencing the program's name, *Palmetto Coast High Leadership Academy*. It introduces a sense of regional identity and balances the more formal navy-and-gold palette, preventing the interface from appearing overly institutional or generic.
+A warm coral accent provides contrast against the predominantly green interface while drawing attention to interactive elements such as buttons and calls to action. The color also reflects Southwest Florida's warm climate and sunsets without overwhelming the overall design.
 
 ---
 
 # Site Architecture Decisions
 
-## Temporary Announcements and Events
+## Mobile-First Navigation
 
-**Decision:** Treat announcements and events as temporary content rather than maintaining permanent archives.
+**Decision:** Design the site with a mobile-first navigation structure.
 
 **Reasoning:**
 
-School organizations primarily communicate information that is relevant in the present. Automatically removing outdated announcements and events after a defined period:
-
-- reduces visual clutter
-- simplifies long-term maintenance
-- keeps content current
-- allows visitors to quickly find relevant information
-
-This approach better serves cadets, parents, instructors, and prospective students than maintaining an extensive archive.
+Many homeowners search for local landscaping services from their phones while away from home or after noticing a need for lawn care. Prioritizing mobile usability ensures visitors can quickly navigate the site, understand available services, and request a quote without unnecessary friction.
 
 ---
 
-## Activity-Based Gallery Organization
+## Service-Focused Information Architecture
 
-**Decision:** Organize the gallery by activity rather than by school year.
+**Decision:** Organize the website around the company's services rather than lengthy marketing content.
 
 **Reasoning:**
 
-Visitors are generally more interested in the experiences offered by the program than the specific year a photograph was taken. Organizing images by activity keeps related content together, making the gallery easier to browse and more intuitive to navigate.
+Most visitors arrive with a practical question:
 
-Each gallery section initially displays a limited number of photographs, with a **"View More"** button allowing visitors to expand the section without leaving the page. This keeps the page manageable while allowing the gallery to grow over time.
+- What services are offered?
+- Does the company work in my area?
+- How do I request a quote?
+
+Placing services near the beginning of the page allows visitors to answer these questions quickly before exploring additional information about the company.
 
 ---
 
-## JSON-Driven Gallery Content
+## Dedicated Service Area Section
 
-**Decision:** Load gallery content dynamically from JSON.
+**Decision:** Include a dedicated section describing the company's service area.
 
 **Reasoning:**
 
-Separating content from presentation allows instructors or cadets to add, remove, or update photographs without modifying the website's HTML. This improves maintainability while reducing the likelihood of accidental layout changes.
+Local service businesses frequently receive inquiries from customers located outside their operating region.
 
-Each image includes:
+Clearly identifying the primary service areas:
 
-- a descriptive title displayed beneath the photograph
-- meaningful alternative text for accessibility
-
-Selecting an image opens the full-size version in the browser's native image viewer.
+- sets expectations early
+- reduces unnecessary inquiries
+- helps visitors determine whether the company serves their location
+- reinforces the business's local presence
 
 ---
 
-## Native Browser Image Viewer
+## Trust-Building Content
 
-**Decision:** Open gallery images using the browser's native image viewer instead of implementing a custom lightbox.
+**Decision:** Highlight reliability and professionalism through dedicated trust indicators.
 
 **Reasoning:**
 
-A custom lightbox was considered during the design process but ultimately rejected. While it would have provided navigation controls and in-page viewing, it also introduced additional JavaScript complexity, accessibility considerations, and ongoing maintenance requirements.
+Landscaping services require customers to trust a company with the appearance and maintenance of their property.
 
-Using the browser's built-in image viewer provides several advantages:
+Rather than relying solely on marketing language, the website emphasizes practical qualities that influence hiring decisions, including:
 
-- reduces implementation complexity
-- improves long-term maintainability
-- relies on familiar browser behavior
-- minimizes accessibility concerns
-- aligns with the project's emphasis on simplicity and reliability
+- reliable scheduling
+- experienced local knowledge
+- professional equipment
+- attention to detail
 
-For this website, the additional complexity of a custom lightbox does not provide sufficient user benefit to justify its implementation.
+## Project Gallery
+
+**Decision:** Include a gallery of completed landscaping projects.
+
+**Reasoning:**
+
+Landscaping is a highly visual service. Showing completed work allows visitors to evaluate quality through real project examples rather than descriptions alone.
+
+The gallery also demonstrates the variety of services offered, including lawn maintenance, palm tree care, mulch installation, and landscape improvements.
+
+## Simple Quote Request Process
+
+**Decision:** Keep the contact form concise while allowing optional project information.
+
+**Reasoning:**
+
+Visitors should be able to request a quote quickly without completing unnecessary fields.
+
+Making the service selection and location optional allows the same form to support both service inquiries and general questions while reducing friction during the initial contact process.
+
+# User Experience Decisions
+
+## Strong Visual Hierarchy
+
+**Decision:** Use clear section separation, large headings, and concise supporting text throughout the website.
+
+**Reasoning:**
+
+Visitors often scan service websites rather than reading every paragraph.
+
+A strong visual hierarchy allows users to quickly identify relevant information, improving usability while reducing cognitive load.
+
+## Neutral Background Palette
+
+**Decision:** Use a warm neutral background (#F4EFE6) behind the primary content sections.
+
+**Reasoning:**
+
+The subtle neutral tone softens the overall interface while allowing the green branding colors to remain visually prominent.
+
+It also improves readability by reducing the contrast fatigue associated with large white backgrounds.
+
+## Performance-First Implementation
+
+**Decision:** Use a warm neutral background (#F4EFE6) behind the primary content sections.Build the website using semantic HTML, CSS, and lightweight JavaScript without external frameworks.
+
+**Reasoning:**
+
+A lightweight implementation:
+
+- reduces page load times
+- improves maintainability
+- minimizes dependencies
+- simplifies future updates
+- provides a responsive experience across desktop and mobile devices
+
+For a small local business website, these advantages outweigh the benefits of introducing additional frontend frameworks.
