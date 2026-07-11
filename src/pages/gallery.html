@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palm Breezy Landscaping | Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css?v=2" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav__container">
+        <div class="logo">
+          <a href="../index.html">Palm Breezy Landscaping</a>
+        </div>
+
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="nav nav__panel" aria-label="Primary">
+          <ul>
+            <div class="nav__dropdown-item">
+              <li class="nav__dropdown-title">
+                <button
+                  id="services-trigger"
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                  aria-controls="services-menu"
+                  class="nav__dropdown-btn"
+                >
+                  Services <i class="fa fa-caret-down"></i>
+                </button>
+              </li>
+              <div id="services-menu" role="menu" hidden>
+                <ul>
+                  <li>
+                    <a href="services/lawn-maintenance.html"
+                      >Routine Lawn Maintenance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/landscape-maintenance.html"
+                      >Landscape Maintenance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/palm-tree-services.html"
+                      >Palm Tree Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/property-cleanup.html"
+                      >Property Cleanup</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/installation-services.html"
+                      >Installation Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav__cta-container">
+            <a href="request-quote.html"
+              ><button class="nav__cta">Request a Quote →</button></a
+            >
+            <a href="tel:+12391234567"
+              ><button class="nav__cta">Call (239) 123 - 4567</button></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <p>Take a look at our full gallery below.</p>
+          <p>
+            From routine lawn maintenance to full landscape improvements, we
+            take pride in delivering clean and professional results.
+          </p>
+        </div>
+      </section>
+
+      <section id="featured-work">
+        <div class="container">
+          <div class="gallery__grid">
+            <div class="gallery__item">
+              <img
+                src="../assets/images/gallery/gallery-photo1.jpg"
+                alt="Project 1 description."
+              />
+              <div class="gallery__item-caption">Landscape Maintenance</div>
+            </div>
+            <div class="gallery__item">
+              <img
+                src="../assets/images/gallery/gallery-photo2.jpg"
+                alt="Project 2 description."
+              />
+              <div class="gallery__item-caption">Routine Lawn Maintenance</div>
+            </div>
+            <div class="gallery__item">
+              <img
+                src="../assets/images/gallery/gallery-photo3.jpg"
+                alt="Project 3 description."
+              />
+              <div class="gallery__item-caption">
+                Palm Tree + Landscape Services
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer__header">Palm Breezy Landscaping</p>
+        <p class="footer__subtitle">Proudly Serving SWFL</p>
+
+        <nav>
+          <a href="#"><i class="fa fa-facebook-official"></i> Our Facebook</a>
+          <a href="#"><i class="fa fa-instagram"></i> Our Instagram</a>
+        </nav>
+
+        <p>&copy; 2026 Palm Breezy Landscaping. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../assets/js/script.js?v=2"></script>
+  </body>
+</html>

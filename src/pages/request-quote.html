@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palm Breezy Landscaping | Request a Quote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css?v=2" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav__container">
+        <div class="logo">
+          <a href="../index.html">Palm Breezy Landscaping</a>
+        </div>
+
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="nav nav__panel" aria-label="Primary">
+          <ul>
+            <div class="nav__dropdown-item">
+              <li class="nav__dropdown-title">
+                <button
+                  id="services-trigger"
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                  aria-controls="services-menu"
+                  class="nav__dropdown-btn"
+                >
+                  Services <i class="fa fa-caret-down"></i>
+                </button>
+              </li>
+              <div id="services-menu" role="menu" hidden>
+                <ul>
+                  <li>
+                    <a href="services/lawn-maintenance.html"
+                      >Routine Lawn Maintenance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/landscape-maintenance.html"
+                      >Landscape Maintenance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/palm-tree-services.html"
+                      >Palm Tree Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/property-cleanup.html"
+                      >Property Cleanup</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services/installation-services.html"
+                      >Installation Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav__cta-container">
+            <a href="request-quote.html"
+              ><button class="nav__cta">Request a Quote →</button></a
+            >
+            <a href="tel:+12391234567"
+              ><button class="nav__cta">Call (239) 123 - 4567</button></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="contact">
+        <div class="container">
+          <h2>Request a Quote</h2>
+          <p>
+            You can request a service or ask a question by filling out the
+            contact form below. A member of our team will review your request
+            and respond as soon as possible. You can also call us at
+            <a href="tel:+12391234567">(239) 123 - 4567</a> or email us at
+            <a href="mailto:contact@palmbreezylandscaping.com"
+              >contact@palmbreezylandscaping.com</a
+            >.
+          </p>
+          <form class="contact__form">
+            <label>Full name:</label><br />
+            <input type="text" placeholder="Name" required />
+
+            <label>Your email:</label><br />
+            <input type="email" placeholder="Email" required />
+
+            <label>Your phone number:</label><br />
+            <input type="tel" placeholder="Phone" required />
+
+            <label for="services-list">Select a service:</label><br />
+            <select name="services-list" id="services-list" required>
+              <option>Routine Lawn Maintenance</option>
+              <option>Landscape Maintenance</option>
+              <option>Palm Tree Services</option>
+              <option>Property Cleanup</option>
+              <option>Installation Services</option>
+            </select>
+
+            <label>Select your county:</label><br />
+            <select required>
+              <option>Charlotte</option>
+              <option>Collier</option>
+              <option>Glades</option>
+              <option>Hendry</option>
+              <option>Lee</option>
+            </select>
+
+            <label>Your city:</label><br />
+            <input type="text" placeholder="City" required />
+
+            <label>Your message:</label><br />
+            <textarea placeholder="Message" required></textarea>
+
+            <div class="contact__btn">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer__header">Palm Breezy Landscaping</p>
+        <p class="footer__subtitle">Proudly Serving SWFL</p>
+
+        <nav>
+          <a href="#"><i class="fa fa-facebook-official"></i> Our Facebook</a>
+          <a href="#"><i class="fa fa-instagram"></i> Our Instagram</a>
+        </nav>
+
+        <p>&copy; 2026 Palm Breezy Landscaping. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../assets/js/script.js?v=2"></script>
+  </body>
+</html>
