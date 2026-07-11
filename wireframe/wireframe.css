@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 2px solid black;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Hero */
+
+#hero {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.hero__buttons {
+  margin-top: 1rem;
+}
+
+.hero__buttons button {
+  margin: 0.25rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Services */
+
+#services {
+  border-top: 2px dashed black;
+}
+
+.service__card {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#services img {
+  width: 100%;
+  height: auto;
+}
+
+/* Trust Section */
+
+#why {
+  border-top: 2px dashed black;
+}
+
+.trust__item {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#why button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Gallery */
+
+#featured-work {
+  border-top: 2px dashed black;
+}
+
+.gallery__item {
+  border: 2px solid black;
+  height: 120px;
+  margin-top: 1rem;
+}
+
+#featured-work button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Service Area */
+
+#service-area {
+  border-top: 2px dashed black;
+}
+
+#services button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* CTA */
+
+#cta {
+  border-top: 2px dashed black;
+  text-align: center;
+}
+
+#cta button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Contact */
+
+#contact {
+  border-top: 2px dashed black;
+}
+
+.contact__form input,
+.contact__form select,
+.contact__form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+}
+
+.contact__form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Footer */
+
+footer {
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer nav {
+  margin: 1rem 0;
+}
+
+footer nav a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
