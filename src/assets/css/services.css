@@ -1,0 +1,132 @@
+/* ================================
+   DESIGN TOKENS
+   ================================= */
+
+:root {
+  --color-primary: #5c9a2a;
+  --color-secondary: #3f6330;
+  --color-accent: #ff7f50;
+  --color-surface-dark: #477c30;
+  --color-surface-light: #ffffff;
+  --color-primary-text: #2b2b2b;
+  --color-secondary-text: #6b6b6b;
+  --color-neutral: #f4efe6;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xl2: 4rem;
+}
+
+/* ================================
+   SERVICE HERO SECTION
+   ================================= */
+
+#service-hero {
+  text-align: center;
+  height: 30vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/site/grass-bg.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero h1 {
+  color: var(--color-neutral);
+}
+
+/* Desktops and larger screens */
+@media (min-width: 801px) {
+  .hero__container {
+    max-width: 700px;
+  }
+}
+
+#service-hero-lawn {
+  text-align: center;
+  height: 30vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/site/service1-lawn-maintenance.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero-lawn h1 {
+  color: var(--color-neutral);
+}
+
+#service-hero-landscape {
+  text-align: center;
+  height: 30vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/site/service2-landscape-maintenance.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero-landscape h1 {
+  color: var(--color-neutral);
+}
+
+#service-hero-palm {
+  text-align: center;
+  height: 30vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/site/service3-palm-trees.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero-palm h1 {
+  color: var(--color-neutral);
+}
+
+#service-hero-property {
+  text-align: center;
+  height: 30vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/site/service4-property-cleanup.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero-property h1 {
+  color: var(--color-neutral);
+}
+
+#service-hero-install {
+  text-align: center;
+  height: 30vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/site/service5-installation.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero-install h1 {
+  color: var(--color-neutral);
+}
