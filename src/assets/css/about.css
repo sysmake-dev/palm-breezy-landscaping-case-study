@@ -24,8 +24,7 @@
 
 #about-hero {
   text-align: center;
-  height: 30vh;
-
+  min-height: 30vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/site/grass-bg.jpg");
@@ -85,7 +84,6 @@
   height: auto;
   text-align: center;
   transition: all 0.25s ease;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
