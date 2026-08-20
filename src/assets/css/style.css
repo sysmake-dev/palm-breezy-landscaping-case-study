@@ -155,6 +155,11 @@ p {
 .nav a {
   text-decoration: none;
   color: var(--color-neutral);
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--color-accent);
 }
 
 .nav__container {
@@ -190,52 +195,86 @@ p {
   font-size: 1.5rem;
 }
 
-#services-trigger {
+.nav__services {
   position: relative;
-  z-index: 9999;
 }
 
-#services-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 280px;
-  padding: 8px;
-  border: 3px solid var(--color-secondary);
-  border-radius: 15px;
-  background: var(--color-surface-dark);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2000;
-}
-
-#services-menu.dropdown-active {
+.nav__services-toggle {
   display: flex;
-}
-
-.nav__dropdown-item {
-  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-neutral);
+  font: inherit;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.nav__dropdown-btn {
-  color: var(--color-neutral);
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  font-size: 1.3rem;
+.nav__services-toggle:hover {
+  color: var(--color-accent);
+}
+
+.nav__services-arrow {
+  display: inline-block;
+  font-size: 0.9em;
+  transition: transform 0.25s ease;
+}
+
+.nav__services-arrow.active {
+  transform: rotate(180deg);
+}
+
+.services__panel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: min(90vw, 520px);
+  padding: 1rem;
+  background: var(--color-surface-dark);
+  border: 1px solid var(--color-secondary);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translate(-50%, -10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.services__panel.active {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.services__panel ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-.nav__dropdown-btn:hover {
-  cursor: pointer;
+.services__panel li {
+  margin: 0;
+}
+
+.services__panel a {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.services__panel a:hover {
+  color: var(--color-accent);
 }
 
 .nav__cta-container {
@@ -866,8 +905,13 @@ footer nav a {
   display: inline-block;
   margin: 0 0.5rem;
   text-decoration: none;
-  color: var(--color-accent);
+  color: var(--color-neutral);
   font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+footer nav a:hover {
+  color: var(--color-accent);
 }
 
 .footer__header {
