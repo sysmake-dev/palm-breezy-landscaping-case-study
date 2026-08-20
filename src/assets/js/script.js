@@ -7,9 +7,10 @@ const toggle = document.querySelector(".nav__toggle");
 const nav = document.querySelector(".nav");
 const navLinks = document.querySelectorAll(".nav a");
 
-// Nav Dropdown Variables
-const trigger = document.getElementById("services-trigger");
-const menu = document.getElementById("services-menu");
+// Services Panel Variables
+const servicesToggle = document.querySelector(".nav__services-toggle");
+const servicesPanel = document.querySelector(".services__panel");
+const servicesArrow = document.querySelector(".nav__services-arrow");
 
 /* ================================
    TOGGLE MENU
@@ -19,7 +20,7 @@ toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
   nav.classList.toggle("active");
 
-  const expanded = toggle.getAttribute("aria-expanded") === "true" || false;
+  const expanded = toggle.getAttribute("aria-expanded") === "true";
   toggle.setAttribute("aria-expanded", !expanded);
 });
 
@@ -32,6 +33,10 @@ navLinks.forEach((link) => {
     nav.classList.remove("active");
     toggle.classList.remove("active");
     toggle.setAttribute("aria-expanded", "false");
+
+    servicesPanel.classList.remove("active");
+    servicesToggle.setAttribute("aria-expanded", "false");
+    servicesArrow.classList.remove("active");
   });
 });
 
@@ -47,6 +52,10 @@ document.addEventListener("click", (event) => {
     nav.classList.remove("active");
     toggle.classList.remove("active");
     toggle.setAttribute("aria-expanded", "false");
+
+    servicesPanel.classList.remove("active");
+    servicesToggle.setAttribute("aria-expanded", "false");
+    servicesArrow.classList.remove("active");
   }
 });
 
@@ -59,27 +68,40 @@ document.addEventListener("keydown", (event) => {
     nav.classList.remove("active");
     toggle.classList.remove("active");
     toggle.setAttribute("aria-expanded", "false");
+
+    servicesPanel.classList.remove("active");
+    servicesToggle.setAttribute("aria-expanded", "false");
+    servicesArrow.classList.remove("active");
   }
 });
 
 /* ================================
-   NAV DROPDOWN TOGGLE
+   SERVICES PANEL TOGGLE
 ================================ */
 
-trigger.addEventListener("click", (e) => {
-  e.preventDefault();
-  e.stopPropagation();
+servicesToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+  event.stopPropagation();
 
-  menu.classList.toggle("dropdown-active");
+  servicesPanel.classList.toggle("active");
+  servicesArrow.classList.toggle("active");
 
-  const expanded = trigger.getAttribute("aria-expanded") === "true";
-  trigger.setAttribute("aria-expanded", !expanded);
+  const expanded = servicesToggle.getAttribute("aria-expanded") === "true";
+
+  servicesToggle.setAttribute("aria-expanded", !expanded);
 });
 
-/* Close when clicking outside */
-document.addEventListener("click", (e) => {
-  if (!menu.contains(e.target) && e.target !== trigger) {
-    menu.classList.remove("dropdown-active");
-    trigger.setAttribute("aria-expanded", "false");
+/* ================================
+   CLOSE SERVICES PANEL OUTSIDE
+================================ */
+
+document.addEventListener("click", (event) => {
+  const isInsideServices = servicesToggle.contains(event.target);
+  const isInsidePanel = servicesPanel.contains(event.target);
+
+  if (!isInsideServices && !isInsidePanel) {
+    servicesPanel.classList.remove("active");
+    servicesArrow.classList.remove("active");
+    servicesToggle.setAttribute("aria-expanded", "false");
   }
 });
